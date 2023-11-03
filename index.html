@@ -1,1 +1,37 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPT and EAD Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>OPT and EAD Calculator for F1 Students</h1>
+
+<div class="input-section">
+    <label for="graduationDate">Graduation Date:</label>
+    <input type="date" id="graduationDate" name="graduationDate" required><br><br>
+    
+    <label for="jobStartDate">Planned Job Start Date:</label>
+    <input type="date" id="jobStartDate" name="jobStartDate" required><br><br>
+    
+    <button onclick="calculateOPT()">Calculate</button>
+</div>
+
+<!-- Plan Evaluation -->
+<div class="plan-evaluation">
+    <!-- This will be populated by the JavaScript function checking the student's plan -->
+</div>
+
+<div id="results">
+    <!-- Results will be displayed here -->
+</div>
+
+<div class="note">
+    <p>* Please note: This calculator is for reference only. Always consult with your school's international students office or other official sources for accurate dates and information.</p>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
